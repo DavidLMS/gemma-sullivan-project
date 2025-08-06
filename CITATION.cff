@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Romero Santos"
+    given-names: "David"
+title: "Gemma Sullivan Project: offline-first educational ecosystem powered by Gemma 3n"
+date-released: 2025-08-06
+url: "https://github.com/DavidLMS/gemma-sullivan-project"
+repository-code: "https://github.com/DavidLMS/gemma-sullivan-project"
+abstract: >
+  The Gemma Sullivan Project is an offline-first educational ecosystem
+  consisting of a Student App and a Tutor App. It creates personalised
+  learning experiences entirely on-device through local inference of the
+  Gemma 3n model, adapting content, generating interactive activities,
+  providing multimodal feedback, and offering optional device-to-device
+  synchronisation. The system guarantees privacy, autonomy, and access to
+  high-quality education in any circumstance.
+keywords:
+  - gemma-3n
+  - offline-first
+  - education
+  - personalized-learning
+  - multimodal
+  - artificial-intelligence
+  - edtech
+  - learning-analytics
+license: "CC-BY-4.0"
+version: "1.0.0"
