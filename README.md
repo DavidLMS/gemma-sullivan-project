@@ -1,4 +1,4 @@
-![Gemma Sullivan Project](assets/logo-with-name.png)
+![Gemma Sullivan Project](assets/logo-with-name-header.png)
 
 <p align="center">
   <a href="https://github.com/DavidLMS/gemma-sullivan-project/pulls">
