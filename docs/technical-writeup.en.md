@@ -14,7 +14,7 @@ This is where Gemma 3n represents a paradigmatic shift. Its ability to run local
 
 The Gemma Sullivan Project aims to be a proposal that opens debate about the best pathways to achieve this radical democratization of education. It's not just a technical solution, but a reimagining of how learning can occur when we eliminate traditional barriers of connectivity and infrastructure.
 
-We've thought about the best way to approach this challenge, not only from a technical standpoint, but also pedagogically. That's why we've described the project's PEDAGOGICAL PRINCIPLES, which underpin every design decision. But in this writeup, we'll focus specifically on the technical aspects: how we've managed to create a system that works completely offline, how we've "tamed" the generations of a small language model to create coherent and personalized educational experiences, and how we've solved the unique challenges that arise when building a truly autonomous educational ecosystem.
+We've thought about the best way to approach this challenge, not only from a technical standpoint, but also pedagogically. That's why we've described the [project's pedagogical principles](https://davidlms.github.io/gemma-sullivan-project/docs/pedagogical-foundations.en), which underpin every design decision. But in this writeup, we'll focus specifically on the technical aspects: how we've managed to create a system that works completely offline, how we've "tamed" the generations of a small language model to create coherent and personalized educational experiences, and how we've solved the unique challenges that arise when building a truly autonomous educational ecosystem.
 
 ## Table of Contents
 
