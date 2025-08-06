@@ -26,6 +26,9 @@ Built as a dual-application platform, it consists of a **Student App** for inter
     ·
     <a href="">Documentation</a>
   </p>
+  ·
+    <a href="https://davidlms.github.io/gemma-sullivan-project/docs/technical-writeup.en">Technical Writeup</a>
+  </p>
 
 ## Table of Contents
 
