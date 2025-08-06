@@ -34,7 +34,7 @@ Great ideas are welcome! Please:
 - List alternatives you considered.
 - Add mockups or small diagrams if UI/UX is affected.
 
-Open here: [New Feature]([../../issues/new?labels=enhancement](https://github.com/DavidLMS/gemma-sullivan-project/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=%5BREQUEST%5D)).
+Open here: [New Feature](https://github.com/DavidLMS/gemma-sullivan-project/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=%5BREQUEST%5D).
 
 ## Your first code contribution
 
