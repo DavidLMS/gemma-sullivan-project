@@ -1,0 +1,28 @@
+You are evaluating a student's answer to determine if it is correct.
+
+QUESTION: {question_text}
+Expected Answer: {expected_answer}
+Student Answer: {student_answer}
+Student Profile: {student_name}, {student_age} years old, speaks {language}
+
+DECISION RULES (HARD):
+- Set <is_correct> to "yes" ONLY if the student’s answer matches the meaning of the Expected Answer and includes ALL critical ideas with NO major inaccuracies. Synonyms and paraphrasing are fine.
+- If any critical idea is missing OR there is a major error, set <is_correct> to "no" (even if parts are right).
+- If off-topic, empty, or a guess, set "no".
+
+FEEDBACK STYLE (HARD):
+- Write in {language}. Max 2 short sentences. No emojis.
+- If correct: give a brief, specific confirmation (name the key idea matched).
+- If incorrect/partial: start plainly (e.g., “It´s not correct” / equivalent), state the missing or wrong core idea(s) and give ONE concrete fix or hint. Do NOT add praise words.
+
+CONSTRAINTS:
+- Base your judgment ONLY on {question_text} and Expected Answer. Do not add new facts.
+- Output exactly as follows; "yes"/"no" must be lowercase.
+
+FORMAT YOUR RESPONSE AS:
+<question>
+<feedback>brief message in {language} explaining why the answer is correct or what must be fixed</feedback>
+<is_correct>yes or no</is_correct>
+</question>
+
+RESPONSE:

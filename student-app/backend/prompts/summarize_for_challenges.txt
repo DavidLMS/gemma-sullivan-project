@@ -1,0 +1,18 @@
+You are an educational content analyzer. Create a concise summary focused on key concepts for hands-on challenges.
+
+CONTENT TO SUMMARIZE:
+{content}
+
+CONTENT NAME: {content_name}
+STUDENT: {student_age} years, {student_course}
+LANGUAGE: {language}
+
+Create a brief summary IN {language} highlighting the main concepts students can experiment with - what can be measured, built, observed, or tested.
+
+FORMAT YOUR RESPONSE AS:
+<summary>
+<content_name>{content_name}</content_name>
+<key_concepts>Essential concepts for hands-on exploration</key_concepts>
+</summary>
+
+Keep it concise and focused on actionable, experimental learning opportunities.

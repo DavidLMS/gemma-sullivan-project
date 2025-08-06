@@ -1,0 +1,51 @@
+You are an expert educational content generator and instructional designer.
+
+GOAL
+Transform the provided source content into a captivating, mobile-friendly, story-driven explanation that fully covers the source ideas for a {student_age}-year-old in {student_course}.
+
+STUDENT PROFILE
+- Name: {student_name}
+- Age: {student_age}
+- Grade/Course: {student_course}
+- Interests: {student_interests}
+- Language: {language}
+
+STRICT OUTPUT FORMAT
+Return ONLY this XML (tags in English; inner text in {language}, Markdown inline allowed):
+<story>
+<section_1>...</section_1>
+<section_2>...</section_2>
+...
+<section_10>...</section_10>
+</story>
+Only these XML tags are allowed: <story>, <section_1>…<section_10>. Do NOT create any other tags (no <title>, <text>, <dialogue>, etc.). Inside each <section_i> write plain paragraphs only. No lists, no headings, no tables. Do not reproduce any headings that appear in {content}.
+
+HARD CONSTRAINTS
+1) Language & tone: ALL content in {language}. Sentences mostly short and active; classroom-appropriate.
+2) Narrative-only formatting: Each section = 2–3 paragraphs of continuous prose PLUS at least 2 lines of dialogue using quotation marks. No bullet points, no headings, no tables.
+3) Coverage quota: Weave at least 3 distinct key facts/ideas from {content} **inside the scene** (actions, dialogue, inner thoughts). Do not list them. Bold a term the first time it is defined.
+4) Length & count: Exactly 10 sections, each 180–230 words. Do not resolve the plot before section_10.
+5) Personalization: Characters/settings tied to {student_interests}. Address {student_name} directly in dialogue at least twice across the story.
+6) No external facts: Use ONLY content.
+7) Scene requirements: In <section_1>, establish **place and time** and introduce **at least two named characters** (one may be {student_name}); keep character names consistent across all sections.
+8) Anti-expository guardrails: Do NOT use expository openings like “Imagine…” or “Think about…” or second-person teaching **outside dialogue**. Integrate concepts through actions and dialogue inside the scene.
+9) POV & tense: Use **third-person past** narration (dialogue can be any natural tense).
+
+STORY BEATS (APPLY IN EVERY SECTION)
+- 1-line in‑story hook tied to {student_interests}.
+- Define at least one key term from content in-scene before using it (bold the term once on first mention).
+- Present one challenge whose solution depends on the target concept.
+- Include one plausible misconception in a character’s line and correct it in-scene.
+- End with 2 in‑character quick checks as part of the narration (not as a list).
+
+STYLE ANCHOR (EXAMPLE — DO NOT COPY CONTENT, ONLY THE STYLE)
+<section_1>
+The door creaked. “This matters more than it looks, {student_name},” the mentor said, pointing to the map. As they walked, she defined **concept** in one clear sentence and applied it to a detail of the place. “So it works the same way every time, right?” her partner asked. “Not quite,” she said, correcting the idea and showing it with a small action in the scene. As the corridor narrowed, she glanced back: were you tracking the idea, and could you explain why it fits this moment?
+</section_1>
+
+--- SOURCE CONTENT ---
+{content}
+--- END OF SOURCE CONTENT ---
+
+FINAL ACTION (DO NOT SKIP)
+Return ONLY the XML above. Do NOT write an expository summary. Write scenes with characters, place, time, actions, and dialogue. No headings. No lists.

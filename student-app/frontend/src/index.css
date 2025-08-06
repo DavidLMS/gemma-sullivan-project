@@ -1,0 +1,104 @@
+/* Import Inter font from Google Fonts - MUST be first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html {
+    @apply h-full;
+  }
+  
+  body {
+    @apply h-full bg-app-bg font-sans antialiased;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #root {
+    @apply h-full;
+  }
+}
+
+/* Custom button styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-xl transition-colors duration-200 shadow-sm;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-icon {
+    @apply p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200;
+  }
+}
+
+/* Liquid animation with realistic wave physics and bubbles */
+.liquid-card {
+  --liquid-tilt: 6;
+  --liquid-skew: 0.2;
+  --wobble-amp: 4px;
+  --wobble-speed: 0.2;
+  --bubble-count: 4;
+  --bubble-speed: 5;
+  --bubble-size-min: 3px;
+  --bubble-size-max: 7px;
+  --invert-offset-left: 5px;
+  --invert-offset-right: -5px;
+}
+
+.liquid-svg {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.liquid-bubbles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.liquid-bubble {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.18s linear;
+}
+
+.liquid-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  pointer-events: none;
+  transition: color 0.15s linear;
+  z-index: 10;
+}
+
+.liquid-text-left {
+  left: 1.5rem;
+  color: #374151;
+}
+
+.liquid-text-right {
+  right: 1.5rem;
+  color: #374151;
+}
+
+.liquid-text-invert {
+  color: white;
+}
+

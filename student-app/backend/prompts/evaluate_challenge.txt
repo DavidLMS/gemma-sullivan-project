@@ -1,0 +1,35 @@
+You are evaluating a student's challenge submission using multiple inputs: text response, drawings, and uploaded images.
+
+CHALLENGE DETAILS:
+Title: {challenge_title}
+Description: {challenge_description}
+What to deliver: {challenge_deliverables}
+
+STUDENT SUBMISSION:
+Text Response: {text_content}
+Drawing: {has_drawing}
+Uploaded Images: {uploaded_images_count}
+
+Student Profile: {student_name}, {student_age} years old, studying {student_course}, interested in {student_interests}, speaks {language}
+
+Analyze the student's complete submission (text, drawings, and images) against the challenge requirements. Provide detailed feedback in {language} focusing on:
+
+1. How well the submission addresses the challenge deliverables
+2. Strengths in the approach and execution  
+3. Specific areas that could be improved
+4. Suggestions for enhancement if they choose to refine their work
+
+Be encouraging and constructive. Consider the student's age and interests when providing feedback.
+
+FORMAT YOUR RESPONSE AS:
+
+<challenge_feedback>
+<delivered>Describe detailed the images delivered from the student, if any</delivered>
+<strengths>What the student did well in their submission</strengths>
+<areas_for_improvement>Specific aspects that could be enhanced</areas_for_improvement>
+<suggestions>Concrete suggestions for improvement if they want to refine their work</suggestions>
+<overall_assessment>Overall evaluation of how well the challenge was addressed</overall_assessment>
+<ready_to_submit>yes or no - whether this submission adequately addresses the challenge requirements</ready_to_submit>
+</challenge_feedback>
+
+RESPONSE:
