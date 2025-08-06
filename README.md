@@ -24,7 +24,7 @@ Built as a dual-application platform, it consists of a **Student App** for inter
     ·
     <a href="https://github.com/DavidLMS/gemma-sullivan-project/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=%5BREQUEST%5D">Request Feature</a>
     ·
-    <a href="">Documentation</a>
+    <a href="https://deepwiki.com/DavidLMS/gemma-sullivan-project">Documentation</a>
   ·
     <a href="https://davidlms.github.io/gemma-sullivan-project/docs/technical-writeup.en">Technical Writeup</a>
   </p>
