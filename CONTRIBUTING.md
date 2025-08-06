@@ -21,7 +21,7 @@ Provide enough detail so someone else can reproduce the problem.
 
 **Then:**
 
-1. Open a new issue: [New Bug]([../../issues/new?labels=bug](https://github.com/DavidLMS/gemma-sullivan-project/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBUG%5D)).  
+1. Open a new issue: [New Bug](https://github.com/DavidLMS/gemma-sullivan-project/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBUG%5D).  
 2. Keep one problem per issue.  
 3. If the issue is security‑sensitive, avoid posting secrets or keys in public. Remove private data from logs.
 
@@ -34,7 +34,7 @@ Great ideas are welcome! Please:
 - List alternatives you considered.
 - Add mockups or small diagrams if UI/UX is affected.
 
-Open here: [New Feature](../../issues/new?labels=enhancement).
+Open here: [New Feature]([../../issues/new?labels=enhancement](https://github.com/DavidLMS/gemma-sullivan-project/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=%5BREQUEST%5D)).
 
 ## Your first code contribution
 
