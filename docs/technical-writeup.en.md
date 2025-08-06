@@ -16,6 +16,27 @@ The Gemma Sullivan Project aims to be a proposal that opens debate about the bes
 
 We've thought about the best way to approach this challenge, not only from a technical standpoint, but also pedagogically. That's why we've described the project's PEDAGOGICAL PRINCIPLES, which underpin every design decision. But in this writeup, we'll focus specifically on the technical aspects: how we've managed to create a system that works completely offline, how we've "tamed" the generations of a small language model to create coherent and personalized educational experiences, and how we've solved the unique challenges that arise when building a truly autonomous educational ecosystem.
 
+## Table of Contents
+
+- [Live Demo](#live-demo)
+- [Project Architecture](#project-architecture)
+    - [The Student Application](#the-student-application)
+        - [Backend](#backend)
+        - [Frontend](#frontend)
+    - [The Tutor Application](#the-tutor-application)
+        - [Backend](#backend-1)
+        - [Frontend](#frontend-1)
+        - [Synchronization Flow](#synchronization-flow)
+    - [Key Architectural Decisions](#key-architectural-decisions)
+- [Gemma 3n Usage](#gemma-3n-usage)
+    - [Gemma 3n Usage in the Student App](#gemma-3n-usage-in-the-student-app)
+    - [Gemma 3n Usage in the Tutor App](#gemma-3n-usage-in-the-tutor-app)
+- [Development Challenges](#development-challenges)
+    - [Learning New Technologies](#learning-new-technologies)
+    - [The Greatest Challenge: "Taming" Gemma 3n](#the-greatest-challenge-taming-gemma-3n)
+- [Conclusion](#conclusion)
+    - [Our Vision](#our-vision)
+
 ## Live Demo
 
 To directly experience the system we'll describe in this writeup, we've deployed both applications:

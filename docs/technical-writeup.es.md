@@ -15,6 +15,42 @@ El Gemma Sullivan Project pretende ser una propuesta que permita abrir el debate
 
 Hemos pensado cuál sería la mejor forma de abordar este desafío, no solo desde el punto de vista técnico, sino también pedagógico. Por eso, hemos descrito los PRINCIPIOS PEDAGÓGICOS del proyecto, que fundamentan cada decisión de diseño. Pero en este writeup nos centraremos específicamente en los aspectos técnicos: cómo hemos logrado crear un sistema que funciona de manera completamente offline, cómo hemos "domesticado" las generaciones de un modelo de lenguaje pequeño para crear experiencias educativas coherentes y personalizadas, y cómo hemos resuelto los desafíos únicos que surgen al construir un ecosistema educativo verdaderamente autónomo.
 
+## Tabla de Contenidos
+
+- [Demo en vivo](#demo-en-vivo)
+- [Arquitectura del proyecto](#arquitectura-del-proyecto)
+    - [La aplicación del estudiante](#la-aplicación-del-estudiante)
+        - [Backend](#backend)
+        - [Frontend](#frontend)
+    - [La aplicación del tutor](#la-aplicación-del-tutor)
+        - [Backend](#backend-1)
+        - [Frontend](#frontend-1)
+        - [Flujo de sincronización](#flujo-de-sincronización)
+    - [Decisiones arquitectónicas clave](#decisiones-arquitectónicas-clave)
+        - [Offline-First por diseño](#offline-first-por-diseño)
+        - [Arquitectura híbrida de IA](#arquitectura-híbrida-de-ia)
+        - [Asincronía no-bloqueante](#asincronía-no-bloqueante)
+    - [Nota sobre el estado del código](#nota-sobre-el-estado-del-código)
+- [Uso de Gemma 3n](#uso-de-gemma-3n)
+    - [Usos de Gemma 3n en la Student App](#usos-de-gemma-3n-en-la-student-app)
+        - [Generación de material de estudio](#generación-de-material-de-estudio)
+        - [Generación de preguntas](#generación-de-preguntas)
+        - [Retroalimentación de las preguntas](#retroalimentación-de-las-preguntas)
+        - [Generación de retos](#generación-de-retos)
+        - [Retroalimentación de los retos](#retroalimentación-de-los-retos)
+        - [Función Discover](#función-discover)
+    - [Uso de Gemma 3n en la Tutor App](#uso-de-gemma-3n-en-la-tutor-app)
+        - [Generación de informes del tutor](#generación-de-informes-del-tutor)
+- [Retos del desarrollo](#retos-del-desarrollo)
+    - [Aprendizaje de nuevas tecnologías](#aprendizaje-de-nuevas-tecnologías)
+    - [El mayor desafío: "Domesticar" Gemma 3n](#el-mayor-desafío-domesticar-gemma-3n)
+        - [Nivel 1: La inferencia de Gemma 3n](#nivel-1-la-inferencia-de-gemma-3n)
+        - [Nivel 2: Prompt Engineering](#nivel-2-prompt-engineering)
+        - [Nivel 3: Parsing inteligente](#nivel-3-parsing-inteligente)
+        - [Nivel 4: Sistema de reintentos resiliente](#nivel-4-sistema-de-reintentos-resiliente)
+- [Conclusión](#conclusión)
+    - [Nuestra visión](#nuestra-visión)
+
 ## Demo en vivo
 
 Para experimentar directamente con el sistema que describiremos en este writeup, hemos desplegado ambas aplicaciones:
